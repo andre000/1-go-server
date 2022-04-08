@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.5.min.css"/>
     <title>1. Simple Web Server</title>
+    <script type="module">
+        import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+    </script>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>This is a simple web server.</p>
+    <section>
+        <h1>Hello World!</h1>
+        <article>
+            <p>This is a simple web server.</p>
+            <hr>
+            <button onclick="window.location.href='/form.html'">Go to form</button>
+        </article>
+    </section>
 </body>
 </html>
