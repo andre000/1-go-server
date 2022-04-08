@@ -17,7 +17,7 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Fprintf(w, "POST request successul!")
+	fmt.Fprintf(w, "POST request successul!\n\n")
 
 	name := r.FormValue("name")
 	email := r.FormValue("email")
@@ -39,7 +39,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Fprintf(w, "Hello, %s!", r.URL.Path[1:])
+	fmt.Fprintf(w, "Hello!")
 }
 
 func main() {
